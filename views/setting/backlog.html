@@ -1,0 +1,47 @@
+<div>
+  <h1>Add Backlog timeline</h1>
+
+  <section>
+    <h2>1. Account</h2>
+
+    <form id="accountForm">
+      <dl class="form">
+       <dt><label for="backlogUrl">API Root URL</label></dt>
+       <dd>
+        <input name="backlogUrl" type="text" class="large" value="" placeholder="https://<your>.backlog.jp">
+        <p class="remarks">ブラウザで見るURLと同等</p>
+       </dd>
+      </dl>
+
+      <dl class="form">
+       <dt><label for="backlogToken">API Token</label></dt>
+       <dd>
+        <input name="backlogToken" type="text" class="full" placeholder="">
+        <p class="remarks">個人設定 -> API 画面で発行したトークン</p>
+       </dd>
+      </dl>
+
+      <button type="submit" class="button primary">Load projects</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>2. Project</h2>
+    <form id="projectForm">
+      <fieldset class="field" disabled="disabled">
+        <select id="projectSelect" name="value">
+          <template id="projectItem">
+            <option value="{{value}}">{{caption}}</option>
+          </template>
+        </select>
+        <button type="submit" class="button primary">Add timeline</button>
+      </fieldset>
+    </form>
+  </section>
+
+  <hr>
+
+  <div class="form-actions">
+    <button class="button" id="cancelButton">Cancel</button>
+  </div>
+</div>
