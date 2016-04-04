@@ -6,4 +6,4 @@ It is made of responsive design for PC or mobile modern browsers.
 
 See https://tilfin.github.io/deck/
 
-![Screen Shot](https://raw.githubusercontent.com/tilfin/deck/gh-pages/img/screenshot.jpg)
+![Screen Shot](https://raw.githubusercontent.com/tilfin/deck/gh-pages/screenshot.jpg)
