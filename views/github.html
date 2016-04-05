@@ -148,12 +148,15 @@
             <img class="avatar avatar-small" src="{{actor.avatarUrl}}">
             <span>{{actor.login}}</span>
           </a>
-          <span class="word">followed</span>
-          <span class="octicon octicon-person"></span>
+          <span class="word">{{action}}</span>
           <a class="actor" href="{{rootUrl}}/{{member.login}}">
             <img class="avatar avatar-small" src="{{member.avatarUrl}}">
             <span>{{member.login}}</span>
           </a>
+          <span class="octicon octicon-arrow-small-right"></span>
+          <span class="repoTarget">
+            <a class="repo" href="{{rootUrl}}/{{repo.name}}">{{repo.name}}</a>
+          </span>
         </div>
       </div>
     </template>
