@@ -1,0 +1,57 @@
+<div class="setting page">
+  <h1>Customize timelines</h1>
+
+  <div id="showcase">
+    <template id="column">
+     <div class="column">
+      <span class="remove mega-octicon octicon-x"></span>
+      <div class="service">{{service}}</div>
+      <div class="project"></div>
+
+      <div class="field">
+        <label for="widthSelect">width</label>
+        <select class="select-sm widthSelect" name="widthSelect">
+          <option value="normal">normal</option>
+          <option value="narrow">narrow</option>
+          <option value="wide">wide</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="notifySelect">notify</label>
+        <select class="select-sm notifySelect" name="notifySelect">
+          <option value="off">Off</option>
+          <option value="mentioned">Mentioned</option>
+          <option value="all">On</option>
+        </select>
+      </div>
+
+      <div class="control clearfix">
+        <span class="left moveLeft mega-octicon octicon-arrow-left"></span>
+        <span class="right moveRight mega-octicon octicon-arrow-right"></span>
+      </div>
+     </div>
+    </template>
+  </div>
+
+  <section>
+    <h3>Add timeline</h3>
+
+    <div class="buttons clearfix">
+      <a id="addGithubColumnButton" class="button service" href="#!settings/github" target="_self">
+        <span class="mega-octicon octicon-mark-github"></span>
+        <span class="caption">GitHub</span>
+      </a>
+
+      <a id="addBacklogColumnButton" class="button service" href="#!settings/backlog" target="_self">
+        <img src="img/backlog-icon.png" width="32" height="32">
+        <span class="caption">Backlog</span>
+      </a>
+    </div>
+  </section>
+
+  <div class="buttons clearfix">
+    <button class="button back" id="cancelButton">Cancel</button>
+    <button class="button primary" id="saveButton">Save</button>
+  </div>
+</div>

@@ -1,6 +1,6 @@
 <template>
   <div class="timeline github">
-    <header>
+    <header class="timelineHeader">
       <a href="{{url}}">
         <span class="service">GitHub</span>
         <span class="project">{{name}}</span>
@@ -200,6 +200,30 @@
           </p>
         </div>
         <div class="pullReqBody quote"></div>
+      </div>
+    </template>
+
+    <template id="PullRequestReviewEvent">
+      <div class="issueEvent ghEvent">
+        <header>
+          <a class="repo" href="{{rootUrl}}/{{repo.name}}">{{repo.name}}</a>
+          <a class="eventTime" href="{{review.htmlUrl}}"><time>{{review.submittedAt}}</time></a>
+        </header>
+        <div class="eventInfo">
+          <a class="actor" href="{{comment.user.htmlUrl}}">
+            <img class="avatar avatar-small" src="{{comment.user.avatarUrl}}">
+            <span>{{comment.user.login}}</span>
+          </a>
+          <span class="action"><span class="octicon octicon-comment-discussion"></span></span>
+        </div>
+        <div class="sub">
+          <p class="eventTitle">
+            <span class="octicon octicon-{{octicon}}"></span>
+            <a class="issueTitle" href="{{pullRequest.htmlUrl}}">#{{number}} {{pullRequest.title}}</a>
+          </p>
+          <div class="issueBody quote"></div>
+        </div>
+        <div class="commentBody quote"></div>
       </div>
     </template>
 
